@@ -18,7 +18,7 @@ int main(){
 				soma += i;
 		}
 		if (soma == num)
-			printf("Número perfeito: %d\n", num);
+			printf("\nNúmero perfeito: %d\n", num);
 	}
 	return 0;
 }
