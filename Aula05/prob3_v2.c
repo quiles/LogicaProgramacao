@@ -15,6 +15,7 @@ int main(){
 
 	for (i=a ; i<=b ; i++){
 		primo = 1;
+		if (i==1) primo = 0;
 		for (j=2 ; j<=(i/2) ; j++){
 			if ((i%j) == 0) {
 				primo = 0;
