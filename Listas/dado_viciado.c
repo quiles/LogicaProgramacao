@@ -24,13 +24,13 @@ int main(){
 	scanf("%d", &prob);
 
 	for (i=0 ; i<LANCES ; i++){
-		p = rand()%100;
+		p = rand()%100; // 0..99
 		if (p < prob) {
-			dado = facev;
+			dado = facev; 
 		}
 		else {
 			do {
-				dado = rand()%FACES;
+				dado = rand()%FACES; 
 			} while (dado == facev);
 		}
 		faces[dado]++;	
