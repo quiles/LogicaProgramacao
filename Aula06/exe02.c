@@ -1,3 +1,8 @@
+/*********************************
+ *  Lógica de Programação
+ * 	Linguagem C
+ *  Prof. Dr. Marcos G. Quiles
+ ********************************/
 #include <stdio.h>
 
 int main(){
