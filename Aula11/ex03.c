@@ -1,3 +1,9 @@
+/*********************************
+ *  Lógica de Programação
+ * 	Linguagem C
+ *  Prof. Dr. Marcos G. Quiles
+ ********************************/
+
 #include <stdio.h>
 #include <string.h>
 
@@ -11,6 +17,38 @@ typedef struct {
 } TAluno;
 
 TAluno alunos[MAX];
+
+int menu();
+int Cadastra_Aluno(int);
+void Consulta_Aluno(int);
+void Imprime_Rel(int);
+
+int main(){
+	int op, res;
+	int index = 0;
+
+	do {
+		op = menu();
+		switch(op){
+			case 1: index = Cadastra_Aluno(index); break;
+			case 2: Consulta_Aluno(index); break;
+			case 3: Imprime_Rel(index); break;
+		}
+	} while (op != 9);
+	
+	return 0;
+}
+
+
+void Imprime_Rel(int index){
+	for (int i=0 ; i<index ; i++){
+		printf("Aluno %d\n", i+1);
+		printf("Nome: %s\n",alunos[i].nome);
+		printf("RA: %s\n", alunos[i].RA);
+		printf("Nota: %.1f\n", alunos[i].nota);
+		printf("Frequencia: %d\n", alunos[i].freq);
+	}
+}
 
 
 int menu(){
@@ -60,33 +98,4 @@ void Consulta_Aluno(int index){
 		printf("Frequencia: %d\n\n\n", alunos[idx].freq);
 	}
 }
-
-void Imprime_Rel(int);
-
-int main(){
-	int op, res;
-	int index = 0;
-	do {
-		op = menu();
-		switch(op){
-			case 1: index = Cadastra_Aluno(index); break;
-			case 2: Consulta_Aluno(index); break;
-			case 3: Imprime_Rel(index); break;
-		}
-	} while (op != 9);
-	
-	return 0;
-}
-
-void Imprime_Rel(int index){
-	for (int i=0 ; i<index ; i++){
-		printf("Aluno %d\n", i+1);
-		printf("Nome: %s\n",alunos[i].nome);
-		printf("RA: %s\n", alunos[i].RA);
-		printf("Nota: %.1f\n", alunos[i].nota);
-		printf("Frequencia: %d\n", alunos[i].freq);
-	}
-}
-
-
 
