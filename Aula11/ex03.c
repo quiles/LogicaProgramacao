@@ -87,15 +87,17 @@ int Cadastra_Aluno(int index){
 
 void Consulta_Aluno(int index){
 	int idx;
+	printf("\n");
 	printf("Qual aluno? ");
 	scanf("%d", &idx);
 	if (idx >= index) printf("\n\nAluno não cadastrado \n\n");
 	else {
-		printf("Dados do aluno %d\n", idx);
-		printf("Nome: %s\n", alunos[idx].nome);
-		printf("RA: %s\n", alunos[idx].RA);
-		printf("Nota: %.1f\n", alunos[idx].nota);
-		printf("Frequencia: %d\n\n\n", alunos[idx].freq);
+		printf("\nAluno %d\n", idx);
+		printf("\tDados do aluno %d\n", idx);
+		printf("\tNome: %s\n", alunos[idx].nome);
+		printf("\tRA: %s\n", alunos[idx].RA);
+		printf("\tNota: %.1f\n", alunos[idx].nota);
+		printf("\tFrequencia: %d\n\n\n", alunos[idx].freq);
 	}
 }
 

@@ -1,3 +1,9 @@
+/*********************************
+ *  Lógica de Programação
+ * 	Linguagem C
+ *  Prof. Dr. Marcos G. Quiles
+ ********************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 30

@@ -1,3 +1,9 @@
+/*********************************
+ *  Lógica de Programação
+ * 	Linguagem C
+ *  Prof. Dr. Marcos G. Quiles
+ ********************************/
+
 #include <stdio.h>
 #include <string.h>
 #define MAX 100

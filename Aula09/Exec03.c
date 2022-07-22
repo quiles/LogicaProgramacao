@@ -1,3 +1,9 @@
+/*********************************
+ *  Lógica de Programação
+ * 	Linguagem C
+ *  Prof. Dr. Marcos G. Quiles
+ ********************************/
+
 #include <stdio.h>
 
 int fib(int n){
@@ -20,16 +26,3 @@ int main(){
 
 
 
-
-
-
-
-// int fib(int n, int v){
-// 	int val;
-// 	for (int i=0 ; i<v ; i++)
-// 		printf(".");
-// 	printf("Fib[%d]\n", n);
-// 	if (n==0 || n==1) val = n;
-// 	else val = fib(n-1,v+1)+fib(n-2,v+1);
-// 	return val;
-// }

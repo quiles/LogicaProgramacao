@@ -1,3 +1,14 @@
+/*********************************
+ *  Lógica de Programação
+ * 	Linguagem C
+ *  Prof. Dr. Marcos G. Quiles
+ ********************************/
+
+// Exemplo de biblioteca de funções
+// para usar essa funcao, basta inserir a chamada para o 
+// arquivo no projeto principal
+// exemplo: #include "funcao.h"
+
 #include <stdio.h>
 
 int fib(int n){
