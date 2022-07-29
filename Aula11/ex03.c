@@ -22,6 +22,8 @@ int menu();
 int Cadastra_Aluno(int);
 void Consulta_Aluno(int);
 void Imprime_Rel(int);
+void Consulta_RA(int);
+
 
 int main(){
 	int op, res;
@@ -33,11 +35,36 @@ int main(){
 			case 1: index = Cadastra_Aluno(index); break;
 			case 2: Consulta_Aluno(index); break;
 			case 3: Imprime_Rel(index); break;
+			case 4: Consulta_RA(index); break;
 		}
 	} while (op != 9);
 	
 	return 0;
 }
+
+void Consulta_RA(int index){
+	char ra[15];
+	int i, encontrou=0;
+	printf("Qual RA: ");
+	scanf("%s", ra);
+
+	for (i=0 ; i<index ; i++){
+		if (strcmp(alunos[i].RA,ra)==0) {
+			printf("\nAluno %d\n", i);
+			printf("\tDados do aluno %d\n", i);
+			printf("\tNome: %s\n", alunos[i].nome);
+			printf("\tRA: %s\n", alunos[i].RA);
+			printf("\tNota: %.1f\n", alunos[i].nota);
+			printf("\tFrequencia: %d\n\n\n", alunos[i].freq);
+			encontrou=1;
+			break;
+		}
+	}
+	if (!encontrou) 
+		printf("\n\nAluno não cadastrado\n\n");
+
+}
+
 
 
 void Imprime_Rel(int index){
@@ -51,12 +78,14 @@ void Imprime_Rel(int index){
 }
 
 
+
 int menu(){
 	int op;
 	printf("Sistema de Cadastro de Alunos\n");
 	printf("\t[1] - Cadastrar\n");
 	printf("\t[2] - Consulta\n");
 	printf("\t[3] - Relatório\n");
+	printf("\t[4] - Consulta RA\n");
 	printf("\t[9] - Sair\n\n");
 	printf("Qual opção: ");
 	scanf("%d", &op);
