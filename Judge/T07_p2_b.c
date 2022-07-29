@@ -8,15 +8,17 @@ int main(){
     char A[1000],B[256],C[256],D[1000];
     char *pont, *pontOld;
 
-//    char A[1000]="Winter Is Coming. O Inverno Esta Chegando.",
-//         B[256]=".",
-//         C[256]="?",
-//         D[256];
+    // gets(A);
+    // gets(B);
+    // gets(C);
+    fgets(A,1000, stdin);
+    fgets(B,256, stdin);
+    fgets(C,256, stdin);
+    A[strlen(A)-1] = '\0';
+    B[strlen(B)-1] = '\0';
+    C[strlen(C)-1] = '\0';
 
-    gets(A);
-    gets(B);
-    gets(C);
-    
+    D[0] = '\0';
     sizeB = strlen(B);
 
     iA = 0;
@@ -29,7 +31,7 @@ int main(){
         pontOld = pont+sizeB;
     }
     strcat(D,pontOld);
-    
+    D[strlen(D)] = '\0';
 
     puts(D);
     printf("%d\n%d\n%d\n",(int)strlen(A),(int)strlen(D),count);
