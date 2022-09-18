@@ -1,0 +1,12 @@
+inicio
+	real: n, h=0;
+	leia(n);
+
+	enquanto (n>0) faça
+		h = h + 1/n;
+		n = n - 1;
+	fim-enquanto
+
+	imprima(h);
+
+fim

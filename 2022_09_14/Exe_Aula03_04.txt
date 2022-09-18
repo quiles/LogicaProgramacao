@@ -1,0 +1,10 @@
+inicio
+	inteiro: n, fat=1;
+	leia(n);
+
+	enquanto (n>0) faça
+		fat = fat * n;
+		n = n - 1;
+
+	imprima(fat);
+fim
