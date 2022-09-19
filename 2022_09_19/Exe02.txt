@@ -1,0 +1,11 @@
+inicio
+	inteiro: n, i;
+	leia(n);
+
+	i = 1;
+	enquanto (i<=n) faça
+		se (i mod 5 == 0) E (i mod 7 == 0) então 
+			imprima (i);
+		i = i + 1;		
+	fim-enquanto
+fim

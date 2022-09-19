@@ -1,0 +1,15 @@
+inicio
+	real: n, h=0, f, fat_n;
+	leia(n);
+	enquanto (n>=0) faça
+		f = n;
+		fat_n = 1;
+		enquanto (f>1) faça		
+			fat_n = fat_n * f;
+			f = f - 1;
+		fim-enquanto
+		h = h + 1/fat_n;
+		n = n - 1;
+	fim-enquanto
+	imprima(h);
+fim

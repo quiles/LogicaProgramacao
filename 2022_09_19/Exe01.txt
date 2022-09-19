@@ -1,0 +1,10 @@
+inicio
+	inteiro: n, i, fat;
+	imprima("Digite o valor de n:");
+	leia(n);
+
+	para i de 2 até n faça
+		fat = fat*i;
+
+	imprima("Fat de ",n, " é ", fat);
+fim

@@ -1,0 +1,12 @@
+inicio
+	inteiro: n;
+
+	leia(n);
+	enquanto (n mod 5 != 0) faça 
+		imprima("Errou...");
+		leia(n);
+	fim-enquanto
+
+	imprima(n);
+
+fim
