@@ -1,0 +1,12 @@
+
+
+inicio
+	real: fI, fF, inc, c, f;
+	leia(fI, fF, inc);
+	f = fI;
+	enquanto (f<=fF) faça
+		c = 5 * (f - 32) / 9;
+		imprima(c, f);
+		f = f + inc;
+	fim-enquanto
+fim

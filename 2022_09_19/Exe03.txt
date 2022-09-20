@@ -1,0 +1,9 @@
+inicio
+	inteiro: soma=0, i;
+
+	para i de 1 até 100 passo 1 faça
+		imprima(i);
+		soma = soma + i;
+	fim-para
+	imprima(soma);
+fim

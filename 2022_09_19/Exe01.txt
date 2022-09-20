@@ -1,5 +1,6 @@
 inicio
 	inteiro: n, i, fat;
+	fat = 1;
 	imprima("Digite o valor de n:");
 	leia(n);
 
