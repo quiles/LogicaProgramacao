@@ -6,16 +6,10 @@
 
 #include <stdio.h>
 
-
 int main(){
-	int n=1; 
-	while (n<=500) { 
-		if (n%5==0)
-			printf("%d\n",n);
-		else 
-			printf(".\n");
-	
-		n = n + 1;
-	}
+	float x;
+	printf("Digite um numero: ");
+	scanf("%f", &x);
+	printf("O quadrado de %.2f eh %.2f\n\n", x, x*x);
 	return 0;
 }

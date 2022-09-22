@@ -6,16 +6,14 @@
 
 #include <stdio.h>
 
-
 int main(){
-	int n=1; 
-	while (n<=500) { 
-		if (n%5==0)
-			printf("%d\n",n);
-		else 
-			printf(".\n");
-	
-		n = n + 1;
-	}
+	int fat=1, n, i;
+	printf("Digite o valor de n:");
+	scanf("%d", &n);
+
+	for (i=1 ; i<=n ; i++) 
+		fat = fat * i;
+
+	printf("O fatorial de %d é %d\n", n, fat);
 	return 0;
 }

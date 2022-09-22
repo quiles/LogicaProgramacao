@@ -1,4 +1,8 @@
-
+/*********************************
+ *  Lógica de Programação
+ * 	Linguagem C
+ *  Prof. Dr. Marcos G. Quiles
+ ********************************/
 
 inicio
 	real: fI, fF, inc, c, f;

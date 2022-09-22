@@ -1,3 +1,9 @@
+/*********************************
+ *  Lógica de Programação
+ * 	Linguagem C
+ *  Prof. Dr. Marcos G. Quiles
+ ********************************/
+
 inicio
 	real: n, h=0;
 	leia(n);

@@ -1,28 +1,26 @@
+/*********************************
+ *  Lógica de Programação
+ * 	Linguagem C
+ *  Prof. Dr. Marcos G. Quiles
+ ********************************/
+
 inicio
-	real: A, B, C, D, x1, x2
-	receba A, B e C
-	D = B*B - 4*A*C
+	real: A, B, C, D, x1, x2;
+	receba A, B e C;
+	D = B*B - 4*A*C;
 	se D<0 então
-		imprima "não existem raízes reais"
+		imprima "não existem raízes reais";
 	senão
 		se D==0 então
-			x1 = -B / (2*A)
-			imprima x1
+			x1 = -B / (2*A);
+			imprima x1;
 		senão
-			x1 = (-B+raiz(D)) / (2*A)
-			x2 = (-B+raiz(D)) / (2*A)
-			imprima x1, x2
+			x1 = (-B+raiz(D)) / (2*A);
+			x2 = (-B+raiz(D)) / (2*A);
+			imprima x1, x2;
+		fim-se
+	fim-se
 fim
-
-inicio
-	natural: A, B, T=0;
-	receba A, B;
-	para i de 1 até A faça
-		T = T + B;
-	fim-para
-	imprima T;
-fim
-
 
 
 
