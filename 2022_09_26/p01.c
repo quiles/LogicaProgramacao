@@ -1,3 +1,11 @@
+/*********************************
+ *  Lógica de Programação
+ * 	Linguagem C
+ *  Prof. Dr. Marcos G. Quiles
+ ********************************/
+
+// Problema 01 - Aula 05
+
 #include <stdio.h>
 
 int main(){
