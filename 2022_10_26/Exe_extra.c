@@ -4,12 +4,13 @@
  *  Prof. Dr. Marcos G. Quiles
  ********************************/
 
-// Ler uma matriz A 5x5 e um escalar p
-// Gerar uma matriz B no qual cada célula de B
-// é a célula equivalente da matriz A^p
+// Ler uma matriz A 5x4 e um escalar p
+// Gerar uma matriz B considerando
+// B[i][j] == A[i][j]^p
+// Observação (não é a potência da matriz A, 
+//  mas a potência de cada elemento de A)
 
 #include <stdio.h>
-
 
 int main(){
     int A[5][4], B[5][4], p, i, j, k;
