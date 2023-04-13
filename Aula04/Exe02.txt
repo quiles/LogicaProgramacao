@@ -1,0 +1,18 @@
+/*********************************
+ *  Lógica de Programação
+ * 	Linguagem C
+ *  Prof. Dr. Marcos G. Quiles
+ ********************************/
+
+inicio
+	inteiro: a, b, mul=0;
+	imprima("Digite os valores de a e b");
+	leia(a,b);
+	
+	// código valido para números inteiros e positivos
+	para i de 1 até a passo 1 faça
+		mul = mul + b;
+	fim-para
+	imprima("A multiplicação de", a, " e ", b, " é ", mul);
+
+fim
