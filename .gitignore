@@ -1,4 +1,5 @@
 backup/
+.gitignore
 # Prerequisites
 *.d
 *.vscode
