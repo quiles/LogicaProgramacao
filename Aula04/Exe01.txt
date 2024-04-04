@@ -1,0 +1,29 @@
+/*********************************
+ *  Lógica de Programação
+ * 	Linguagem C
+ *  Prof. Dr. Marcos G. Quiles
+ ********************************/
+
+inicio
+	inteiro: N, maior, menor, qtd=0;
+	real: media=0;
+
+	leia(N);
+	menor = N;
+	maior = N;
+	enquanto N != -1 faça
+		se (menor > N) então menor = N;
+		se (maior < N) então maior = N;
+		media = media + N;
+		qtd = qtd + 1;
+		leia(N);
+	fim-enquanto
+	se (qtd == 0) imprima("Nenhum numero digitado");
+	senão
+		media = media / qtd;
+		imprima(maior, menor, media);
+	fim-se
+
+fim
+
+

@@ -1,0 +1,31 @@
+/**************************************
+ *  Lógica de Programação
+ * 	Linguagem C
+ *  Prof. Dr. Marcos G. Quiles
+ *
+ *  Código: Classificação de triangulos
+ **************************************/
+
+
+inicio
+	real: A, B, C;
+	leia(A, B, C);
+
+	se A<=0 OU B<=0 OU C<=0 então
+		imprima ("Erro");
+	senão
+		se (B+C>A) E (B+A>C) E (A+C>B)  então
+			se A==B E B==C então
+				imprima("Equilatero");
+			senão se A==B OU B==C OU A==C então
+				imprima("Isosceles");
+			senão
+				imprima("Escaleno");
+		senão
+			imprima("Lados nao formam um triangulo");
+		fim-se
+	fim-se
+fim
+
+
+

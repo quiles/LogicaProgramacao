@@ -1,0 +1,16 @@
+/*********************************
+ *  Lógica de Programação
+ * 	Linguagem C
+ *  Prof. Dr. Marcos G. Quiles
+ ********************************/
+
+inicio
+	inteiro: N=1;
+
+	enquanto N<=500 faça
+		se N mod 5 == 0 então 
+			imprima(N);
+		N = N + 1;
+	fim-enquanto
+
+fim

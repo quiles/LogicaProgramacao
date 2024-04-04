@@ -1,0 +1,20 @@
+/*********************************
+ *  Lógica de Programação
+ * 	Linguagem C
+ *  Prof. Dr. Marcos G. Quiles
+ ********************************/
+
+inicio
+	inteiro: fib, n, f1=0, f2=1;
+	leia (n);
+	para i de 2 até n faça
+		fib = f1+f2;
+		f1 = f2;
+		f2 = fib;
+	fim-para
+
+	se (n<2) então
+		imprima(n);
+	senão
+		imprima(fib);
+fim
