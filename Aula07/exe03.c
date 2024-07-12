@@ -19,14 +19,14 @@ int main(){
     }
 
     for (i=0; i<N-1; i++) {
-        troca = 0; // Flag para otimizar o algoritmo
+        troca = 0; // indicador de troca
         for (j = 0; j<N-i-1; j++) {
             if (vetor[j] > vetor[j+1]) {
-                // Troca os elementos de posição
+                // Troca os elementos j e j+1
                 temp = vetor[j];
                 vetor[j] = vetor[j + 1];
                 vetor[j + 1] = temp;
-                troca = 1; // Uma troca foi realizada
+                troca = 1; 
             }
         }
         if (troca == 0) {
