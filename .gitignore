@@ -1,4 +1,5 @@
 backup/
+temp/
 .gitignore
 # Prerequisites
 *.d
