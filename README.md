@@ -4,4 +4,4 @@
 
 ## Códigos da Disciplina de Lógica de Programação
 
-Primeiro Semestre de 2024
+Primeiro Semestre de 2026
